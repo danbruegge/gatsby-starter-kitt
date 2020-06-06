@@ -1,0 +1,17 @@
+overwrite: true
+schema: "http://localhost:3000/___graphql"
+documents:
+  - ./src/**/*.{ts,tsx}
+  - ./node_modules/gatsby-*/**/*.js
+generates:
+  ./src/types/graphql.ts:
+    hooks:
+      afterAllFileWrite:
+        - prettier --write
+        - eslint --fix
+    plugins:
+      - typescript
+      - typescript-operations
+config:
+  namingConvention:
+    enumValues: keep
