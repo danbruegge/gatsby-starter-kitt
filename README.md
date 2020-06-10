@@ -25,5 +25,3 @@ Then you can run it by:
 cd gatsby-example-site
 yarn dev
 ```
-
-[logo]: static/images/icon.png
