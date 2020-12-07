@@ -1,5 +1,5 @@
 {
-  "name": "@danbruegge/gatsby-starter-minial",
+  "name": "@danbruegge/gatsby-starter-minimal",
   "description": "Gatsby minimal starter with typescript, linting and styled-components",
   "version": "1.0.0",
   "author": "Daniel Brüggemann <hello@danbruegge.com>",
