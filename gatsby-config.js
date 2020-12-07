@@ -6,7 +6,6 @@ module.exports = {
   siteMetadata,
   plugins: [
     "gatsby-plugin-eslint",
-    "gatsby-plugin-typescript",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-manifest",
