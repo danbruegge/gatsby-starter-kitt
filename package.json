@@ -75,5 +75,8 @@
     "styled-components",
     "styled-system",
     "graphql-codegen"
-  ]
+  ],
+  "devDependencies": {
+    "@types/styled-system": "^5.1.10"
+  }
 }
