@@ -22,12 +22,18 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: center;
   }
 
   main > h1 {
     text-align: center;
+  }
+
+  blockquote {
+    background-color: ${(props) => props.theme.colors.dark};
+    color: ${(props) => props.theme.colors.light};
+    padding: 0 1em;
+    border-left: 0.5em solid ${(props) => props.theme.colors.primary};
+    border-radius: 0.5em;
   }
 
   ${({ theme }) => `
@@ -61,6 +67,8 @@ export const Layout: FC<Props> = ({ children, title }) => {
     </>
   );
 };
+
+export default Layout;
 
 const query = graphql`
   {

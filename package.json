@@ -1,6 +1,6 @@
 {
   "name": "@danbruegge/gatsby-starter-minimal",
-  "description": "Gatsby minimal starter with typescript, linting and styled-components",
+  "description": "Gatsby minimal starter with mdx, typescript, linting and styled-components",
   "version": "1.0.0",
   "author": "Daniel Brüggemann <hello@danbruegge.com>",
   "license": "MIT",
@@ -20,12 +20,16 @@
     "test:watch": "yarn test --watch"
   },
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "gatsby": "^2.28.0",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-manifest": "^2.8.0",
+    "gatsby-plugin-mdx": "^1.6.0",
     "gatsby-plugin-offline": "^3.6.0",
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-styled-components": "^3.6.0",
+    "gatsby-source-filesystem": "^2.7.0",
     "graphql": "^15.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -70,6 +74,7 @@
   "keywords": [
     "gatsby",
     "starter",
+    "mdx",
     "typescript",
     "eslint",
     "prettier",

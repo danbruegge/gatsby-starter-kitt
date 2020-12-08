@@ -16,7 +16,16 @@ const IndexPage: FC<Metadata<IndexProps>> = ({ data }) => {
 
   return (
     <Layout title={page.title}>
-      <Link to="/subpage">Go to /subpage</Link>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/subpage">/subpage</Link>
+          </li>
+          <li>
+            <Link to="/mdx-page">/mdx-page</Link>
+          </li>
+        </ul>
+      </nav>
     </Layout>
   );
 };

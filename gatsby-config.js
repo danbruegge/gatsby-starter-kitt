@@ -26,6 +26,21 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "src/pages/",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/Layout.tsx"),
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-styled-components",
       options: {
         displayName: isDev,

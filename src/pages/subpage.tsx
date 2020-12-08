@@ -17,7 +17,7 @@ const Subpage: FC<Metadata<SubpageProps>> = ({ data }) => {
   return (
     <Layout title={page.title}>
       <Link to={"/"} color="secondary">
-        Go to /
+        Go back to /
       </Link>
     </Layout>
   );

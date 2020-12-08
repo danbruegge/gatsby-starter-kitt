@@ -1,6 +1,6 @@
 # gatsby-starter-minimal
 The Gatsby starter with `typescript`, `eslint`, `prettier`, `stylelint`,
-`styled-components`, `styled-system` and `graphql-codegen`. This starter aims
+`styled-components`, `styled-system`, `mdx` and `graphql-codegen`. This starter aims
 to have a minimal code boilerplate to get a simple start. Mostly created for my
 own personal needs.
 
