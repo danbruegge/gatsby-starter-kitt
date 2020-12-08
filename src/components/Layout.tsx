@@ -1,17 +1,15 @@
 import React, { FC } from "react";
 import { ThemeProvider, createGlobalStyle } from "styled-components";
 import { useStaticQuery, graphql } from "gatsby";
+import { normalize } from "styled-normalize";
 
 import { theme } from "-/theme";
 import { fonts } from "-/fonts";
 import { Head } from "-/components/Head";
 
 const GlobalStyle = createGlobalStyle`
+  ${normalize}
   ${fonts}
-
-  html, body {
-    margin: 0;
-  }
 
   body {
     background-color: ${(props) => props.theme.background.color};
