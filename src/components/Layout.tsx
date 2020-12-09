@@ -50,7 +50,15 @@ interface Props {
 }
 
 export const Layout: FC<Props> = ({ children, title }) => {
-  const { site } = useStaticQuery(query);
+  const data = useStaticQuery<GatsbyTypes.Query>(graphql`
+    query LayoutQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
 
   return (
     <>
@@ -58,7 +66,7 @@ export const Layout: FC<Props> = ({ children, title }) => {
       <ThemeProvider theme={theme}>
         <>
           <main>
-            <h1>{site.siteMetadata.title}</h1>
+            <h1>{data.site?.siteMetadata?.title ?? "No Title"}</h1>
             {children}
           </main>
           <GlobalStyle />
@@ -68,14 +76,5 @@ export const Layout: FC<Props> = ({ children, title }) => {
   );
 };
 
+// `require.resolve` needs an default export to wrap `<Layout />` around and mdx file.
 export default Layout;
-
-const query = graphql`
-  {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;

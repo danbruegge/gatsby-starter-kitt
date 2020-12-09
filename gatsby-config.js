@@ -5,7 +5,18 @@ const isDev = Boolean(process.env.NODE_ENV);
 module.exports = {
   siteMetadata,
   plugins: [
-    "gatsby-plugin-typegen",
+    {
+      resolve: "gatsby-plugin-typegen",
+      options: {
+        emitSchema: {
+          "__generated__/gatsby-schema.graphql": true,
+          "__generated__/gatsby-schema.json": true,
+        },
+        emitPluginDocuments: {
+          "__generated__/gatsby-plugin-documents.graphql": true,
+        },
+      },
+    },
     "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
     {
