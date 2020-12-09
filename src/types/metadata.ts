@@ -1,9 +1,11 @@
 export interface Metadata<T> {
   data: {
     site: {
-      siteMetadata: {
-        pages: T;
-      };
+      siteMetadata: T;
     };
   };
+}
+
+export interface Pages<T> {
+  pages: T;
 }

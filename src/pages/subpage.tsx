@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { graphql } from "gatsby";
 
-import { Metadata } from "-/types/metadata";
+import { Metadata, Pages } from "-/types/metadata";
 import { Layout } from "-/components/Layout";
 import { Link } from "-/components/Link";
 
@@ -11,7 +11,7 @@ interface SubpageProps {
   };
 }
 
-const Subpage: FC<Metadata<SubpageProps>> = ({ data }) => {
+const Subpage: FC<Metadata<Pages<SubpageProps>>> = ({ data }) => {
   const page = data.site.siteMetadata.pages.subpage;
 
   return (
