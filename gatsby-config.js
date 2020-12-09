@@ -1,6 +1,6 @@
 const siteMetadata = require("./site-metadata");
 
-const isDev = !!process.env.NODE_ENV;
+const isDev = Boolean(process.env.NODE_ENV);
 
 module.exports = {
   siteMetadata,
