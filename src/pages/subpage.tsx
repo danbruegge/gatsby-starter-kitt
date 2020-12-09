@@ -1,27 +1,22 @@
 import React, { FC } from "react";
 import { graphql } from "gatsby";
 
-import { Metadata, Pages } from "-/types/metadata";
 import { Layout } from "-/components/Layout";
 import { Link } from "-/components/Link";
 
-interface SubpageProps {
-  subpage: {
-    title: string;
-  };
+interface Props {
+  data: GatsbyTypes.Site;
 }
 
-const Subpage: FC<Metadata<Pages<SubpageProps>>> = ({ data }) => {
-  const page = data.site.siteMetadata.pages.subpage;
-
-  return (
-    <Layout title={page.title}>
-      <Link to={"/"} color="secondary">
-        Go back to /
-      </Link>
-    </Layout>
-  );
-};
+const Subpage: FC<Props> = ({ data }) => (
+  <Layout
+    title={data.siteMetadata?.pages?.index?.title || "Default Subpage Title"}
+  >
+    <Link to={"/"} color="secondary">
+      Go back to /
+    </Link>
+  </Layout>
+);
 
 export default Subpage;
 

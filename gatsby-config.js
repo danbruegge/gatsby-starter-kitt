@@ -5,6 +5,7 @@ const isDev = Boolean(process.env.NODE_ENV);
 module.exports = {
   siteMetadata,
   plugins: [
+    "gatsby-plugin-typegen",
     "gatsby-plugin-eslint",
     "gatsby-plugin-react-helmet",
     {
