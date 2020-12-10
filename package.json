@@ -1,6 +1,6 @@
 {
-  "name": "@danbruegge/gatsby-starter-minimal",
-  "description": "Gatsby minimal starter with mdx, typescript, linting and styled-components",
+  "name": "@danbruegge/gatsby-starter-kitt",
+  "description": "Gatsby starter kitt with typescript, mdx, linting and styled-components",
   "version": "1.0.0",
   "author": "Daniel Brüggemann <hello@danbruegge.com>",
   "license": "MIT",
@@ -77,6 +77,7 @@
     "prettier",
     "stylelint",
     "styled-components",
-    "styled-system"
+    "styled-system",
+    "jest"
   ]
 }

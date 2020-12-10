@@ -1,8 +1,7 @@
-# gatsby-starter-minimal
+# gatsby-starter-kitt
 The Gatsby starter with `typescript`, `eslint`, `prettier`, `stylelint`,
-`styled-components`, `styled-system` and `mdx`. This starter aims
-to have a minimal code boilerplate to get a simple start. Mostly created for my
-own personal needs.
+`styled-components`, `styled-system` and `mdx`. Mostly created for my own
+personal needs.
 
 For an overview of the project structure please refer to the [Gatsby
 documentation - Building with
@@ -17,7 +16,7 @@ npm install --global gatsby-cli
 
 And run from your CLI:
 ```sh
-gatsby new gatsby-example-site https://github.com/danbruegge/gatsby-starter-minimal/
+gatsby new gatsby-example-site https://github.com/danbruegge/gatsby-starter-kitt/
 ```
 
 Then you can run it by:

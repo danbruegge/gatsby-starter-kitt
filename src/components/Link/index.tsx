@@ -6,8 +6,6 @@ import { color } from "styled-system";
 const StyledLink = styled.a`
   ${color}
 
-  text-decoration: none;
-
   &:hover {
     font-weight: 700;
   }
@@ -21,7 +19,7 @@ export interface Props {
 export const Link: FC<Props> = ({ to, ...parentProps }) => {
   const isInternal = /^\/(?!\/)/.test(to);
   const props = {
-    color: "primary",
+    color: "light",
     ...parentProps,
   };
 

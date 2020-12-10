@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/tsconfig",
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "__generated__/*"],
   "compilerOptions": {
     "allowJs": false,
     "allowSyntheticDefaultImports": true,

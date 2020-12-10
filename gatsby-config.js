@@ -8,6 +8,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-typegen",
       options: {
+        outputPath: "__generated__/gatsby-types.ts",
         emitSchema: {
           "__generated__/gatsby-schema.graphql": true,
           "__generated__/gatsby-schema.json": true,
@@ -28,7 +29,7 @@ module.exports = {
         background_color: "#0c0e0d",
         theme_color: "#59a27a",
         display: "standalone",
-        icon: "static/images/icon.png",
+        icon: "static/favicon.ico",
       },
     },
     {

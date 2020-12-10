@@ -9,7 +9,7 @@ describe("Should render Link", () => {
 
     const link = screen.getByText("Hello");
 
-    expect(link).toHaveAttribute("color", "primary");
+    expect(link).toHaveAttribute("color", "light");
     expect(link).toHaveAttribute("href", "http://example.tld");
     expect(link).toHaveAttribute("rel", "noopener noreferrer");
     expect(link).toHaveAttribute("target", "_blank");
@@ -20,7 +20,7 @@ describe("Should render Link", () => {
 
     const link = screen.getByText("Subpage");
 
-    expect(link).toHaveAttribute("color", "primary");
+    expect(link).toHaveAttribute("color", "light");
     expect(link).toHaveAttribute("href", "/subpage");
   });
 });

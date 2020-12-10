@@ -8,10 +8,10 @@ const breakpoints = {
 };
 
 export const COLORS = {
-  dark: "#0c0e0d",
-  light: "#f9f9fa",
-  primary: "#59a27a",
-  secondary: "#edac37",
+  dark: "#000000",
+  light: "#ffffff",
+  primary: "#cc0000",
+  secondary: "#880000",
 };
 
 export const theme = {
@@ -23,9 +23,9 @@ export const theme = {
   },
   fontFamily: ["Fira Mono", "monospace"],
   background: {
-    color: COLORS.light,
+    color: COLORS.dark,
   },
   text: {
-    color: COLORS.dark,
+    color: COLORS.light,
   },
 };
