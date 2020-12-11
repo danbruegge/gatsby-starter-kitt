@@ -29,13 +29,13 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 interface Props {
-  location?: Location;
   title: string;
+  pageContext: GatsbyTypes.SitePageContext;
 }
 
-export const Layout: FC<Props> = ({ children, location, title }) => (
+export const Layout: FC<Props> = ({ children, title, pageContext }) => (
   <>
-    <Head title={title} currentPath={location?.pathname} />
+    <Head title={title ?? pageContext?.frontmatter?.title} />
     <ThemeProvider theme={theme}>
       <>
         <header>
